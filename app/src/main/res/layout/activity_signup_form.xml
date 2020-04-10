@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.01" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.99" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="162dp"
+        android:layout_height="413dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="235dp"
+        android:layout_marginRight="235dp"
+        android:layout_marginBottom="188dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/human" />
+
+    <FrameLayout
+        android:layout_width="231dp"
+        android:layout_height="434dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginLeft="179dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginBottom="167dp"
+        android:background="#1F19BF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"
+            android:layout_marginTop="40sp"
+            android:layout_marginRight="12sp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="FULL NAME"
+            android:inputType="text"
+            android:textColor="#1719A5"
+            android:textSize="22sp"
+            android:id="@+id/fname"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"
+            android:layout_marginTop="120sp"
+            android:layout_marginRight="12sp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="USER NAME"
+            android:inputType="text"
+            android:textColor="#1719A5"
+            android:textSize="22sp"
+            android:id="@+id/uname"></EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"
+            android:layout_marginTop="200sp"
+            android:layout_marginRight="12sp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="EMAIL ID"
+            android:inputType="textEmailAddress"
+            android:textColor="#1719A5"
+            android:textSize="22sp"
+            android:id="@+id/email"></EditText>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"
+            android:layout_marginTop="280sp"
+            android:layout_marginRight="12sp"
+            android:background="#ffffff"
+            android:ems="10"
+            android:hint="PASSWORD"
+            android:inputType="text"
+            android:textColor="#1719A5"
+            android:textSize="22sp"
+            ></EditText>
+
+        <Button
+            android:id="@+id/gtlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12sp"
+            android:layout_marginTop="350sp"
+            android:layout_marginRight="12sp"
+            android:background="@drawable/button_round"
+            android:onClick="btn_loginform"
+            android:text="REGISTER"
+            android:textColor="#2543EA"
+            android:textSize="20sp"
+            tools:ignore="OnClick"
+            android:layout_marginBottom="10sp" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="638dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="SIGN UP TO CONTINUE"
+        android:textColor="#040355"
+        android:textColorHighlight="@color/colorPrimary"
+        android:textFontWeight="33"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
